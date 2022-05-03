@@ -1,4 +1,3 @@
-from decimal import Clamped
 from Dispositivos_de_Entrada import DispositivosEntrada
 
 class Raton(DispositivosEntrada):
@@ -22,7 +21,7 @@ class Raton(DispositivosEntrada):
         self._id_raton = nuevo_id
     
     def __str__(self) -> str:
-        return f'id: {self._id_raton}, {super().__str__()}'
+        return f'Id: {self._id_raton}, {super().__str__()}'
 
 if __name__ == '__main__':
     mouse1 = Raton('Weibo', 'USB')
